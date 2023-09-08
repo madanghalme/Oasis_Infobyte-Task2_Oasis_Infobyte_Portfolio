@@ -1,0 +1,346 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #48b14d;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #cbcbcb;
+}
+.nav-item a {
+    font-weight: 600;
+    padding: 0px 25px !important;
+    color: inherit !important;
+    font-size: 13px !important;
+    float: right;
+}
+.navbar {
+
+    background: transparent;
+    position: sticky;
+    top: 0;
+    color: white;
+    transition: background-color 0.5s;
+
+}
+
+.fa-bars {
+    color: #686868;
+}
+
+.navbar.scrolled {
+    background: rgba(48, 47, 47, 0.3);
+    color: black;
+    backdrop-filter: blur(8px);
+
+}
+
+.nav-item a:hover {
+    color: #48B14D !important;
+
+    border-radius: 25px;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 996px) {
+    .nav-item a {
+        padding: 7px !important;
+    }
+
+    .img-about {
+        width: 90% !important;
+    }
+
+    .navbar {
+        backdrop-filter: blur(3px);
+    }
+
+    .theme {
+        margin-top: 2.5%;
+    }
+
+    .fa-moon {
+        color: #808080 !important;
+
+    }
+
+    .gallery::-webkit-scrollbar {
+        height: 5px !important;
+    }
+
+    .horizontal-gallery {
+        margin-top: 4% !important;
+    }
+
+}
+.navbar-brand {
+    font-size: 22px !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: inherit !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.intro {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1556480435-b7b37fd635d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    z-index: -1;
+    background-position: bottom;
+
+}
+
+.header-img {
+    width: 160px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+}
+
+.fa-angle-down {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    animation: slide 0.9s ease-in-out infinite;
+}
+
+@keyframes slide {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0px, 10px);
+    }
+}
+
+.fa-brands {
+    transition: 0.4s;
+}
+
+.fa-brands:hover {
+    color: #48B14D;
+    scale: 1.5 !important;
+}
+
+.img-about {
+    aspect-ratio: 1;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #48B14D !important;
+    transform: scale(1.1);
+}
+
+.btn {
+    transition: 0.4s !important;
+}
+#education {
+    background-color: #F2F2F2;
+}
+
+.progress {
+    width: 100%;
+    height: 6px !important;
+    background-color: rgb(104, 104, 104) !important;
+}
+
+.progress-bar {
+    width: 0%;
+    position: relative;
+    height: 100%;
+    background-color: #48B14D !important;
+    transition: 1s all !important;
+    opacity: 1 !important;
+}
+
+.hp {
+    transition: 1s all !important;
+    opacity: 0 !important;
+    width: 0 !important;
+}
+
+.prjct {
+
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 1000/620;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.prjct img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.prjct .child {
+    aspect-ratio: 1000/620;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    backdrop-filter: blur(9px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scale: 0;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.prjct:hover .child {
+    scale: 1;
+    opacity: 1;
+}
+
+.prjct .child a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.prjct .child a:hover {
+    color: #48B14D;
+    scale: 1.05;
+    transition: 0.2s;
+}
+#contact,
+#projects,
+#services {
+    background-color: #F2F2F2;
+}
+
+#hire .btn {
+    width: 160px;
+    height: 60px;
+
+}
+
+.gallery img {
+    width: 60%;
+}
+
+.gallery {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+.gallery::-webkit-scrollbar {
+    height: 8px !important;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background-color: #48b14d;
+    border-radius: 10px;
+}
+.gallery .horizontal-gallery {
+    display: inline;
+}
+.gallery::-webkit-scrollbar-track {
+    background-color: #cbcbcb;
+}
+.potrait {
+    width: 33.75% !important;
+}
+
+#education h2,
+#skills h2,
+#contact h2,
+#hire h2,
+#services h2,
+#projects h2,
+#gallery h1 {
+    letter-spacing: 3px;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #eee !important;
+}
+
+:root {
+    --bg-primary-dark: #272a2d;
+    --bg-secondary-dark: rgb(46, 46, 48);
+    --text-dark: white;
+    --icon-dark: white;
+    --bg-tertiary: #48B14D;
+}
+
+#about.dark,
+#skills.dark,
+#hire.dark,
+#gallery.dark,
+#FOOTER.dark {
+    background-color: var(--bg-primary-dark);
+    color: var(--text-dark);
+}
+
+#education.dark2,
+#services.dark2,
+#projects.dark2,
+#contact.dark2 {
+    background-color: var(--bg-secondary-dark);
+    color: var(--text-dark);
+}
+
+#navbar.dark {
+    color: white !important;
+}
+
+.fa-moon {
+    color: #6e6e6e;
+}
+
+.fa-sun {
+    color: #dedede;
+}
